@@ -1,1 +1,32 @@
+<div class="article">
+    <div class="article__votes">
+        <div class="ui statistic">
+            <div class="value">
+                {{ article.votes }}
+            </div>
+            <div class="label">
+                POINTS
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <a class="ui large header" href="{{ article.link }}">
+            {{ article.title }}
+        </a>
+        <ul class="votes">
+            <li class="item">
+                <a href (click)="article.voteUp()">
+                    <i class="upvote"></i>
+                    upvote
+                </a>
+            </li>
+            <li class="item">
+                <a href (click)="article.voteDown()">
+                    <i class="downvote"></i>
+                    downvote
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
