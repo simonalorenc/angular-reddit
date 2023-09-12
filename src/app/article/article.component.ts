@@ -28,6 +28,15 @@ export class ArticleComponent implements OnInit {
     return false
   }
 
+  domain() {
+    try {
+      const domainAndPath: string = this.article.link.split('//')[1]
+      return domainAndPath.split('/')[0]
+    } catch (err) {
+      return null
+    }
+  }
+
   ngOnInit() {
 
   }

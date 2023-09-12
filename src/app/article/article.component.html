@@ -13,6 +13,7 @@
         <a class="ui large header" href="{{ article.link }}">
             {{ article.title }}
         </a>
+        <div class="meta">({{ article.domain() }})</div>
         <ul class="votes">
             <li class="item">
                 <a href (click)="article.voteUp()">
