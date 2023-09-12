@@ -1,0 +1,17 @@
+.ui.items > .item {
+    display: flex;
+    margin: 1em 0em;
+    width: 100%;
+    min-height: 0px;
+    background: transparent;
+    padding: 0em;
+    border: none;
+    border-radius: 0rem;
+    box-shadow: none;
+    transition: box-shadow 0.1s ease;
+    z-index: '';
+  }
+  .ui.items > .item a {
+    cursor: pointer;
+  }
+  
